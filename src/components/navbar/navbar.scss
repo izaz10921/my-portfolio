@@ -1,0 +1,30 @@
+.navbar{
+    height: 100px;
+
+    .wrapper{
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        font-size: 30px;
+
+        span{
+            font-weight: bold;
+        }
+        
+        .social {
+            display: flex;
+          
+            a {
+              margin-right: 20px; /* Add any spacing between the links */
+              transition: transform 0.2s ease-in-out; /* Transition effect for smooth scaling */
+              font-size: 24px;
+              &:hover {
+                transform: scale(1.3);
+              }
+            }
+          }
+    }
+}
