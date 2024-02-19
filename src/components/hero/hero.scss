@@ -58,6 +58,12 @@
         right: 0;
         padding-top: 120px;
         padding-right: 180px;
+        transition: transform 0.4s ease-in-out;
+        /* Transition effect for smooth scaling */
+        
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     .slidingText {
@@ -69,5 +75,6 @@
         width: 50%;
         font-weight: bold;
     }
+
 
 }

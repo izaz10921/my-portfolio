@@ -14,9 +14,9 @@ const Navbar = () => {
                 transition={{duration:0.5}}>Izaz Siddique</motion.span>
                 <div className="social">
                     <a href=""><FaTwitter></FaTwitter></a>
-                    <a href=""><FaFacebook></FaFacebook></a>
-                    <a href=""><FaGithub></FaGithub></a>
-                    <a href=""><FaLinkedin></FaLinkedin></a>
+                    <a href="https://www.facebook.com/izaz.siddique.1/" target="_blank"><FaFacebook></FaFacebook></a>
+                    <a href="https://github.com/izaz10921" target="_blank"><FaGithub></FaGithub></a>
+                    <a href="https://www.linkedin.com/in/izaz-siddique/" target="_blank" ><FaLinkedin></FaLinkedin></a>
                 </div>
             </div>
         </div>

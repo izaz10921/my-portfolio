@@ -1,31 +1,30 @@
 import "./app.scss"
+import AboutMe from "./components/aboutMe/AboutMe";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
+import Parallax from "./components/parallax/Parallax";
+import Projects from "./components/projects/Projects";
 
-const App = () => {
-  return <div>
+const App = () => <div>
 
-    <section id="Homepage">
-      <Navbar></Navbar>
-      <Hero></Hero>
-    </section>
-    <section id="About me">Parallax</section>
-    <section>About me</section>
-    <section id="Skills">Parallax</section>
-    <section >Skills</section>
-    <section id="Portfolio">Parallax</section>
-    <section>Portfolio1</section>
-    <section>Portfolio2</section>
-    <section>Portfolio3</section>
-    
-    <section id="Contact">Contact</section>
-    
+  <section id="Homepage">
+    <Navbar></Navbar>
+    <Hero></Hero>
+  </section>
+
+  <section id="About me"><AboutMe /></section>
+  <section id="Skills"><Parallax type="Skills" /></section>
+  <section>Skills</section>
+  <section id="Projects"><Parallax type="portfolio" /></section>
+  <Projects></Projects>
+
+  <section id="Contact">Contact</section>
 
 
 
 
 
-  </div>;
-};
+
+</div>;
 
 export default App;
