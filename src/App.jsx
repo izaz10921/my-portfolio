@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 // import Parallax from "./components/parallax/Parallax";
 import Projects from "./components/projects/Projects";
 import Loading from "./Loading/Loading";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
 const [isLoading,setIsLoading] = useState(true);
@@ -33,7 +34,7 @@ setIsLoading(false);
     
   
     <Projects ></Projects>
-    <section id="Contact">Contact</section></div>
+    <section id="Contact"><Contact></Contact></section></div>
   )
 }
 

@@ -4,7 +4,7 @@ import "./Loading.scss";
 const Loading = () => {
     return (
         <div className='loader' >
-            <p>zaz</p>
+           
             <Triangle
                 visible={true}
                 height="80"
