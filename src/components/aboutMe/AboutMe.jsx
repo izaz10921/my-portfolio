@@ -1,21 +1,53 @@
+// import { useRef } from "react";
 import "./aboutMe.scss"
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
+// import { motion,useInView } from "framer-motion";
+
+
+const variants = {
+    initial: {
+        y: 300,
+        opacity: 0
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.8,
+            staggerChildren: 0.1,
+        },
+    },
+}
 const AboutMe = () => {
+    // const ref =useRef()
     return (
         <div className="aboutMe">
             <div className="progress">
-                <h1>About me</h1>
-                <div className="progressBar"></div>
+                <h1>About Me</h1>
+                <h3>My Introduction</h3>
             </div>
-            <div className="container">
-                <motion.div className="aboutMeText">
-                    <p>I'm Izaz Siddique, a junior full-stack web developer studying Computer Science. Skilled in frontend technologies like HTML, CSS, Bootstrap, and React JS, I create dynamic and visually appealing web applications. With backend expertise in Node.js, Express.js, and MongoDB, I build robust server-side solutions. Passionate about software engineering principles and always eager to learn, I thrive in collaborative environments where creativity and innovation flourish. Explore my portfolio to see my work and let's connect!
-                    </p>
-                </motion.div>
-                <motion.div className="aboutMeImage">
-                    <img src="https://i.ibb.co/M9bwFMH/about-me-1.png" alt="" />
-                </motion.div>
-            </div>
+            <motion.div className="container" variants={variants} initial="initial" whileInView="animate">
+                <div className="box">
+                    <motion.div className="card" variants={variants}>
+                        <img src="https://i.ibb.co/CPLnRp3/customer-satisfaction-4936426.png" alt="" />
+                        <h1>Experience</h1>
+                        <p>1 + Years</p>
+                    </motion.div>
+                    <motion.div className="card" variants={variants}>
+                        <img src="https://i.ibb.co/58fhQ5X/mark-14791443.png" alt="" />
+                        <h1>Completed</h1>
+                        <p>6 Projects</p>
+                    </motion.div>
+                    <motion.div className="card" variants={variants}>
+                        <img src="https://i.ibb.co/MPQKMQk/live-chat-2991793.png" alt="" />
+                        <h1>Support</h1>
+                        <p>Online 24/7</p>
+                    </motion.div>
+                </div>
+                <div className="text">
+                    <p>Hi, I'm Izaz Siddique, a junior full-stack web developer studying Computer Science. Skilled in HTML, CSS, React JS, Node.js, Express.js, .NET core MVC, and MongoDB, I create dynamic web applications and build robust server-side solutions. Passionate about software engineering principles. Explore my portfolio to see my work and let's connect!</p>
+                </div>
+            </motion.div>
         </div>
     );
 };

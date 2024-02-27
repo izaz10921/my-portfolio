@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Loading from "./Loading/Loading";
 import Contact from "./components/contact/Contact";
+import Skill from "./components/skill/Skill";
 
 const App = () => {
 const [isLoading,setIsLoading] = useState(true);
@@ -28,7 +29,7 @@ setIsLoading(false);
     </section>
   
     <section id="About me"><AboutMe /></section>
-    <section id="Skills">Skills</section>
+    <section id="Skills"><Skill></Skill></section>
     <section id="Projects">service</section>
   
     

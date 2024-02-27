@@ -40,14 +40,14 @@ const Hero = () => {
         <div className="hero">
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
-                    <motion.h2 variants={textVariants}>IZAZ SIDDIQUE</motion.h2>
+                <motion.button className="welcomeText" variants={textVariants}>Welcome to my portfolio </motion.button>
                     <motion.h1 variants={textVariants}>I'm a <br />
 
                         <TypeAnimation
                             sequence={[
-                                // Same substring at the start will only be typed out once, initially
+                                
                                 'Web developer',
-                                2000, // wait 1s before replacing "Mice" with "Hamsters"
+                                2000, 
                                 'Coder',
                                 2000,
                                 'Tech Enthusiast',

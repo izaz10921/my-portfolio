@@ -7,7 +7,7 @@ const items = [
     {
         id: 1,
         title:"Restaurant Management Website",
-        img:"https://i.ibb.co/Xs7VVKv/oo1.png",
+        img:"https://i.ibb.co/y09Jncx/Screenshot-1-removebg-preview.jpg",
         desc:"Top features",
         feature1:"MenuDisplay: Easily browse through a comprehensive list of food items for a seamless restaurant experience.",
         feature2:"Individual ItemDetails: Access specific information about each food item, enhancing decision-making.",
@@ -20,7 +20,7 @@ const items = [
     {
         id: 2,
         title:"Car Brand Shop Website",
-        img:"https://i.ibb.co/GJ71zRx/project2-1.png",
+        img:"https://i.ibb.co/92L4BX9/a10-1-removebg-preview.jpg",
         desc:"Top features",
         feature1:"Users can easily specify product details and images for a personalized experience.",
         feature2:" Browsing products by brand name simplifies the user experience.",
@@ -33,7 +33,7 @@ const items = [
     {
         id: 3,
         title:"Social event management Website",
-        img:"https://i.ibb.co/26Z3vQw/project3-1.png",
+        img:"https://i.ibb.co/JnqVMNR/a9-1-removebg-preview.jpg",
         desc:"Top features",
         feature1:"SeamlessGoogle and email-based authentication for user convenience  ",
         feature2:" Restricted access to private routes, prompting login if not authenticated.",

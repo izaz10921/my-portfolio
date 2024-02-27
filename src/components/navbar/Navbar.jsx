@@ -8,16 +8,17 @@ const Navbar = () => {
             {/* Sidebar */}
             <Sidebar></Sidebar>
             <div className="wrapper">
-                <motion.span 
+                <motion.img
                 initial={{opacity:0,scale:0.5}}
                 animate={{opacity:1,scale:1}}
-                transition={{duration:0.5}}>Izaz Siddique</motion.span>
+                transition={{duration:0.5}}src="https://i.ibb.co/x8Qsspm/logo-removebg-preview.png"/>
                 <div className="social">
                     <a href=""><FaTwitter></FaTwitter></a>
                     <a href="https://www.facebook.com/izaz.siddique.1/" target="_blank"><FaFacebook></FaFacebook></a>
                     <a href="https://github.com/izaz10921" target="_blank"><FaGithub></FaGithub></a>
                     <a href="https://www.linkedin.com/in/izaz-siddique/" target="_blank" ><FaLinkedin></FaLinkedin></a>
                 </div>
+                
             </div>
         </div>
     );

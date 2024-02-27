@@ -19,10 +19,13 @@
             justify-content: center;
             gap: 40px;
 
-            h2 {
-                font-size: 30px;
-                color: rebeccapurple;
-                letter-spacing: 10px;
+            .welcomeText{
+                font-size: 35px;
+                padding: 10px;
+                background: linear-gradient(90deg, #25173b, #5e0877);
+                border: none;
+                color: white;
+                border-radius: 3px;
             }
 
             h1 {
