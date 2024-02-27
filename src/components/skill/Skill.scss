@@ -1,6 +1,7 @@
 .skill {
     background-color: #111132;
     height: 100%;
+    color: #fff;
 
     .progress {
 
@@ -13,15 +14,18 @@
 
         h3 {
             font-size: 18px;
-            padding-top: 5px;
+            padding-top: 1px;
             color: #fff;
         }
     }
 
     .container {
         display: flex;
-        gap: 20px;
-        h1{
+
+        justify-content: space-evenly;
+        padding-top: 10px;
+
+        h1 {
             font-size: 22px;
             padding-top: 5px;
             padding-bottom: 5px;
@@ -30,7 +34,7 @@
 
         .frontend {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); 
+            grid-template-columns: repeat(4, 1fr);
             gap: 5px;
             // justify-content: center; 
             // align-items: center; 
@@ -39,20 +43,20 @@
                 height: 120px;
                 width: 120px;
                 border-radius: 50%;
-                background-color: #fff;
+                background-color: #f0f1f1f7;
                 box-shadow: 0px 0px 20px rgb(147, 146, 148);
-               
+
 
                 img {
                     height: 60px;
                     width: 60px;
                     max-width: 100%;
                     max-height: 100%;
-                    
+
                     margin-left: 30px;
                     margin-top: 15px;
-                    
-                    
+
+
 
 
                 }
@@ -65,28 +69,30 @@
             }
         }
 
-        .backend{
+        .backend {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); 
+            grid-template-columns: repeat(4, 1fr);
             gap: 5px;
+
             .back {
                 height: 120px;
                 width: 120px;
                 border-radius: 50%;
-                background-color: #fff;
+                background-color: #f0f1f1f7;
+                
                 box-shadow: 0px 0px 20px rgb(147, 146, 148);
-               
+
 
                 img {
                     height: 60px;
                     width: 60px;
                     max-width: 100%;
                     max-height: 100%;
-                    
+
                     margin-left: 30px;
                     margin-top: 15px;
-                    
-                    
+
+
 
 
                 }
@@ -98,26 +104,29 @@
                 }
             }
         }
-        .framework{
+
+        .framework {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); 
+            grid-template-columns: repeat(4, 1fr);
             gap: 10px;
-            .frame{
+
+            .frame {
                 height: 120px;
                 width: 120px;
                 border-radius: 50%;
-                background-color: #fff;
+                background-color: #f0f1f1f7;
                 box-shadow: 0px 0px 20px rgb(147, 146, 148);
+
                 img {
                     height: 60px;
                     width: 60px;
                     max-width: 100%;
                     max-height: 100%;
-                    
+
                     margin-left: 30px;
                     margin-top: 15px;
-                    
-                    
+
+
 
 
                 }
@@ -129,5 +138,37 @@
                 }
             }
         }
+        .healTitle{
+            background-color: orange;
+            
+        }
+        .edu {
+            display: flex;
+
+            justify-content: center;
+            gap: 50px;
+
+        }
+
+        .title {
+            padding-top: 30px;
+            
+        }
+
+        .edu1 {
+            display: flex;
+
+            justify-content: center;
+            gap: 50px;
+
+        }
+
+        .des {
+            padding-top: 10px;
+        }
+        .head{
+            color: orange;
+        }
+       
     }
 }

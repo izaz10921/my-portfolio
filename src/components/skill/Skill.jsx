@@ -1,4 +1,20 @@
 import "./Skill.scss"
+import { motion } from "framer-motion";
+const variants = {
+    initial: {
+        y: 300,
+        opacity: 0
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.8,
+            staggerChildren: 0.1,
+        },
+    },
+};
+
 
 const Skill = () => {
     return (
@@ -9,77 +25,108 @@ const Skill = () => {
             </div>
             <div className="container">
 
-                <div className="skill">
+                <div className="skills"   >
                     <h1>Frontend</h1>
                     <div className="frontend">
-                        <div className="front">
+                        <motion.div className="front" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/ZN5F0Hv/html.png" alt="" />
                             <p>HTML</p>
-                        </div>
-                        <div className="front">
+                        </motion.div>
+                        <motion.div className="front" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/Ss697wt/css.png" alt="" />
                             <p>CSS</p>
-                        </div>
-                        <div className="front">
+                        </motion.div>
+                        <motion.div className="front" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/s9mm0Yq/js.png" alt="" />
                             <p>JS</p>
-                        </div>
-                        <div className="front">
+                        </motion.div>
+                        <motion.div className="front" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/LQML325/tailwind.png" alt="" />
                             <p>Tailwind</p>
-                        </div>
-                        <div className="front">
+                        </motion.div>
+                        <motion.div className="front" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/BPNFp45/scss.png" alt="" />
                             <p>SCSS</p>
-                        </div>
-                        <div className="front">
+                        </motion.div>
+                        <motion.div className="front" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/crVtt0j/react.png" alt="" />
                             <p>React</p>
-                        </div>
-                        <div className="front">
+                        </motion.div>
+                        <motion.div className="front" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/XxgJ285/redux-svgrepo-com.png" alt="" />
                             <p>Redux</p>
-                        </div>
-                        <div className="front">
+                        </motion.div>
+                        <motion.div className="front" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/tmWvG09/next-js-svgrepo-com.png" alt="" />
                             <p>Next JS</p>
-                        </div>
+                        </motion.div>
 
                     </div>
                     <h1>Backend</h1>
                     <div className="backend">
-                        <div className="back">
+                        <motion.div className="back" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/WyRBJRB/firebase-svgrepo-com.png" alt="" />
                             <p>Firebase</p>
-                        </div>
-                        <div className="back">
+                        </motion.div>
+                        <motion.div className="back" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/xh6bCYP/mongo-svgrepo-com.png" alt="" />
                             <p>Mongo DB</p>
-                        </div>
-                        <div className="back">
+                        </motion.div>
+                        <motion.div className="back" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/4Mfdkhp/node-js-svgrepo-com.png" alt="" />
                             <p>Node JS</p>
-                        </div>
-                        <div className="back">
+                        </motion.div>
+                        <motion.div className="back" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/hDhjBxt/sql-database-sql-azure-svgrepo-com.png" alt="" />
                             <p>SQL</p>
-                        </div>
+                        </motion.div>
 
                     </div>
-                    <h1>Framework</h1>
+                    <h1 >Framework</h1>
                     <div className="framework">
-                        <div className="frame">
+                        <motion.div className="frame" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/cQq642R/dotnet-svgrepo-com.png" alt="" />
                             <p>.NET</p>
-                        </div>
+                        </motion.div>
 
                     </div>
 
 
                 </div>
-                <div className="education">
-                    <p>internship</p>
-                </div>
+                <motion.div className="education" variants={variants} initial="initial" whileInView="animate">
+                    <h1 >Experience:</h1>
+                    <div className="edu">
+
+
+                        <div>
+                            <h1>2023</h1>
+                        </div>
+                        <div>
+                            <h1>Internship Frontend Developer</h1>
+                            <p className="head">Unicorn Software Solution Ltd.</p>
+                            <p className="des">Collaborated with a web development team to create a responsive website <br /> utilizing HTML, CSS, JavaScript and React.
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div className="experience">
+                        <h1 className="title">Education:</h1>
+                        <div className="edu1">
+
+                            <div>
+                                <h1>2023</h1>
+                            </div>
+                            <div>
+                                <h1>Bachelor of Science in Computer Science & Engineering</h1>
+                                <p className="head">American International University Bangladesh</p>
+                                <p className="des">BScCSE, Software Engineering, [1st Major]
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
             </div>
         </div>
     );
