@@ -1,0 +1,54 @@
+.service {
+    background-color: #111132;
+    height: 100%;
+
+    .progress {
+
+        top: 0;
+        left: 0;
+        padding-top: 30px;
+        text-align: center;
+        color: orange;
+        font-size: 30px;
+
+        h3 {
+            font-size: 18px;
+            padding-top: 1px;
+            color: #fff;
+        }
+    }
+
+    .listContainer {
+        display: flex;
+        max-width: 1266px;
+        margin: auto;
+
+        .box {
+            .details{
+                display: flex;
+                align-items: baseline;
+                p{
+                    font-size: 18px;
+                    text-align: justify;
+                }
+            }
+            .imgTag{
+                height: 15px;
+                width: 15px;
+                margin-right: 5px;
+            }
+            
+            padding: 50px;
+            border: 0.5px solid gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            button{
+                padding: 10px;
+                background-color: orange;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

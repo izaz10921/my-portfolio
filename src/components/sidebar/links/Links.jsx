@@ -29,6 +29,7 @@ const Links = () => {
         "Homepage",
         "About me",
         "Skills",
+        "Services",
         "Projects",
         "Contact",
     ]

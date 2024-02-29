@@ -8,6 +8,9 @@ import Projects from "./components/projects/Projects";
 import Loading from "./Loading/Loading";
 import Contact from "./components/contact/Contact";
 import Skill from "./components/skill/Skill";
+import Service from "./components/service/Service";
+
+
 
 const App = () => {
 const [isLoading,setIsLoading] = useState(true);
@@ -30,12 +33,17 @@ setIsLoading(false);
   
     <section id="About me"><AboutMe /></section>
     <section id="Skills"><Skill></Skill></section>
-    <section id="Projects">service</section>
+    <section id="Services"><Service></Service></section>
   
     
   
     <Projects ></Projects>
-    <section id="Contact"><Contact></Contact></section></div>
+    
+    <section id="Contact"><Contact></Contact></section>
+    
+    </div>
+    
+    
   )
 }
 

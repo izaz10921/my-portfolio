@@ -1,6 +1,6 @@
 // import { useRef } from "react";
 import "./aboutMe.scss"
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 // import { motion,useInView } from "framer-motion";
 
 
@@ -45,7 +45,7 @@ const AboutMe = () => {
                     </motion.div>
                 </div>
                 <div className="text">
-                    <p>Hi, I'm Izaz Siddique, a junior full-stack web developer studying Computer Science. Skilled in HTML, CSS, React JS, Node.js, Express.js, .NET core MVC, and MongoDB, I create dynamic web applications and build robust server-side solutions. Passionate about software engineering principles. Explore my portfolio to see my work and let's connect!</p>
+                    <p>Hi, I'm Izaz Siddique, a junior full-stack web developer studying Computer Science. Skilled in <span className="spanTag">HTML, CSS, React JS, Next JS Node.js, Express.js, .NET core MVC, and MongoDB</span>, I create dynamic web applications and build robust server-side solutions. Passionate about software engineering principles. Explore my portfolio to see my work and let's connect!</p>
                 </div>
             </motion.div>
         </div>

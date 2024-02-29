@@ -26,7 +26,7 @@ const Skill = () => {
             <div className="container">
 
                 <div className="skills"   >
-                    <h1>Frontend</h1>
+                    <h1 className="tag">Frontend</h1>
                     <div className="frontend">
                         <motion.div className="front" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/ZN5F0Hv/html.png" alt="" />
@@ -62,7 +62,7 @@ const Skill = () => {
                         </motion.div>
 
                     </div>
-                    <h1>Backend</h1>
+                    <h1 className="tag">Backend</h1>
                     <div className="backend">
                         <motion.div className="back" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/WyRBJRB/firebase-svgrepo-com.png" alt="" />
@@ -82,7 +82,7 @@ const Skill = () => {
                         </motion.div>
 
                     </div>
-                    <h1 >Framework</h1>
+                    <h1 className="tag" >Framework</h1>
                     <div className="framework">
                         <motion.div className="frame" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
                             <img src="https://i.ibb.co/cQq642R/dotnet-svgrepo-com.png" alt="" />
@@ -94,7 +94,7 @@ const Skill = () => {
 
                 </div>
                 <motion.div className="education" variants={variants} initial="initial" whileInView="animate">
-                    <h1 >Experience:</h1>
+                    <h1 className="tag">Experience:</h1>
                     <div className="edu">
 
 
